@@ -13,7 +13,9 @@
                 <a class="navbar-item" href="/">
                     <strong class="title">My app</strong>
                 </a>
-
+                <a class="navbar-item" href="/Movies">
+                    <strong class="title">Movies</strong>
+                </a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -27,13 +29,15 @@
                 <div class="navbar-start">
                     @Html.ActionLink("10+5", "Sum", "Calculator", new { firstNumber = 10, secondNumber = 5 }, new { @class = "navbar-item" })
                     @Html.ActionLink("10+23", "Sum", "Calculator", new { firstNumber = 10, secondNumber = 23 }, new { @class = "navbar-item" })
-                  
-                    @Html.ActionLink("movies/add", "Add", "Movies", new { @class = "navbar-item" })
+
+                   
                 </div>
+               
+
 
                 <div class="navbar-end">
                     <div class="navbar-item">
-                        <div class="buttons">                            
+                        <div class="buttons">
                         </div>
                     </div>
                 </div>
